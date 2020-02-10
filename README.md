@@ -7,3 +7,7 @@
  As a user 
  So I can keep a list of all my bookmarks
  I want to show a list of my bookmarks 
+
+ # Domain model
+
+ https://github.com/makersacademy/course/blob/master/bookmark_manager/images/bookmark_manager_1.png?raw=true
