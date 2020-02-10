@@ -1,0 +1,24 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/hansa/makers/week4/bookmark/spec/features/feature_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/hansa/makers/week4/bookmark/spec/features/viewing_bookmarks_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1581349053
+  }
+}
