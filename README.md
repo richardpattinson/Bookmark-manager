@@ -10,4 +10,4 @@
 
  # Domain model
 
- ![Image description](https://github.com/makersacademy/course/blob/master/bookmark_manager/images/bookmark_manager_1.png?raw=true)
+ ![Domain model diagram](https://github.com/makersacademy/course/blob/master/bookmark_manager/images/bookmark_manager_1.png?raw=true)
