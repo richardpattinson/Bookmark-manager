@@ -1,6 +1,10 @@
+require 'pg'
+
 class Bookmark
 #self is a new instance of a class
   def self.all
-    ["bookmark 1", "bookmark 2", "bookmark 3"]
+    conn = PG.connect( dbname: 'bookmark_manager' )
+    result = conn.exec( "SELECT * FROM bookmarks" )
+    result.map { |bookmark| bookmark['url'] }
   end
 end

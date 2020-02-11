@@ -8,3 +8,5 @@ gem "rspec"
 gem "capybara"
 gem "simplecov"
 gem "simplecov-console"
+gem "rubocop", "0.79.0"
+gem 'pg'
