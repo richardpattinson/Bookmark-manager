@@ -9,7 +9,12 @@ class BookmarkManager < Sinatra::Base
 
   get '/bookmarks' do
     @list = Bookmark.all
-    erb :index
+    erb :bookmarks_list
+  end
+
+  get '/add' do
+    Bookmark.add(params[:new_bookmark])
+    erb :add
   end
 
   #  run! if app_file == $0
