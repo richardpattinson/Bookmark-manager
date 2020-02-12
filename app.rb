@@ -13,7 +13,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/add' do
-    Bookmark.add(params[:new_bookmark])
+    Bookmark.add(params[:new_url], params[:new_title])
     erb :add
   end
 
