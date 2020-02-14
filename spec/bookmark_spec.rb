@@ -7,12 +7,22 @@ describe Bookmark do
    
     it 'returns all bookmarks' do 
       connection = PG.connect(dbname: 'bookmark_manager_test')
-      Bookmark.add("http://www.makersacademy.com", "Makers Academy")
-      Bookmark.add("http://www.google.com", "Google")
+      test1 = Bookmark.add(url: "http://www.makersacademy.com", title: "Makers Academy")
+      test2 = Bookmark.add(url: "http://www.google.com", title: "Google")
       bookmarks = Bookmark.all
-      expect(bookmarks.to_s).to include "Makers Academy"
-      expect(bookmarks.to_s).to include "Google"
+      expect(test1.title).to eq("Makers Academy")
+      expect(test2.title).to eq("Google")
       # expect(bookmarks).to include "bookmark 3"
     end
   end
+  describe '.delete' do
+    it 'deletes the given bookmark' do
+      bookmark = Bookmark.add(title: 'Makers Academy', url: 'http://www.makersacademy.com')
+    
+      Bookmark.delete(id: bookmark.id)
+  
+      expect(Bookmark.all.length).to eq 0
+    end
+  end
+
 end 
